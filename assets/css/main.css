@@ -1306,7 +1306,11 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+}
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
