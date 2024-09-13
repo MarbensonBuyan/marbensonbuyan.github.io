@@ -276,23 +276,3 @@ document.addEventListener('DOMContentLoaded', function() {
   
   typeWriter();
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  const text = "Member on the Year 2018-2019";
-  const speed = 20; // Typing speed in milliseconds
-  let i = 0;
-  const typewriterElement = document.getElementById("typewriter3");
-  
-  function typeWriter() {
-      if (i < text.length) {
-          typewriterElement.textContent += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-      } else {
-          // Add a span with the cursor after typing is complete
-          typewriterElement.innerHTML += '<span class="cursor">|</span>';
-      }
-  }
-  
-  typeWriter();
-});
